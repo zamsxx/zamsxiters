@@ -310,7 +310,7 @@ document.getElementById("purchaseForm").addEventListener("submit", function(even
     const paymentMethod = document.getElementById("payment").value;
 
     // Generate order summary with line breaks
-    const whatsappMessage = `Hallo Zams, saya ingin membeli Injector\Produk : ${selectedInjector}\nEmail : ${email}\nPayment : ${paymentMethod}`;
+    const whatsappMessage = `*Pesanan akan di proses..*\n\nProduk : ${selectedInjector}\nEmail : ${email}\nPayment : ${paymentMethod}`;
 
     // Redirect to WhatsApp with the message (let encodeURIComponent handle encoding)
     const whatsappUrl = `https://wa.me/6281574849252?text=${encodeURIComponent(whatsappMessage)}`;
