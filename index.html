@@ -262,63 +262,72 @@
     </div>
 
     <!-- Modal -->
-    <div id="purchaseModal" class="modal">
-        <div class="modal-content">
-            <h3>Pembelian <span id="injectorType"></span></h3>
-            <form id="purchaseForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+ <!-- Modal -->
+<div id="purchaseModal" class="modal">
+    <div class="modal-content">
+        <h3>Pembelian <span id="injectorType"></span></h3>
+        <form id="purchaseForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+            <h3>REQUEST LOGIN</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username" required>
 
-                <label for="payment">Metode Pembayaran:</label>
-                <select id="payment" name="payment" required>
-                    <option value="">Pilih metode pembayaran</option>
-                    <option value="DANA">DANA</option>
-                    <option value="GOPAY">GOPAY</option>
-                    <option value="QRIS">QRIS</option>
-                </select>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
 
-                <p id="orderSummary"></p>
+            <label for="payment">Metode Pembayaran:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Pilih metode pembayaran</option>
+                <option value="DANA">DANA</option>
+                <option value="GOPAY">GOPAY</option>
+                <option value="QRIS">QRIS</option>
+            </select>
 
-                <button type="submit" class="btn">Konfirmasi Pembelian</button>
-            </form>
-            <br>
-            <button class="close-btn" onclick="closeModal()">Batal Pesan</button>
-        </div>
+            <p id="orderSummary"></p>
+
+            <button type="submit" class="btn">Konfirmasi Pembelian</button>
+        </form>
+        <br>
+        <button class="close-btn" onclick="closeModal()">Batal Pesan</button>
     </div>
+</div>
 
 <script>
-        let selectedInjector = "";
+    let selectedInjector = "";
 
-        // Function to open modal and display injector details
-        function openModal(injector) {
-            selectedInjector = injector;
-            document.getElementById("injectorType").innerText = injector;
-            document.getElementById("purchaseModal").style.display = "flex";
-        }
+    // Function to open modal and display injector details
+    function openModal(injector) {
+        selectedInjector = injector;
+        document.getElementById("injectorType").innerText = injector;
+        document.getElementById("purchaseModal").style.display = "flex";
+    }
 
-        // Function to close modal
-        function closeModal() {
-            document.getElementById("purchaseModal").style.display = "none";
-        }
+    // Function to close modal
+    function closeModal() {
+        document.getElementById("purchaseModal").style.display = "none";
+    }
 
-// Handle form submission
-document.getElementById("purchaseForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+    // Handle form submission
+    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    // Get user input
-    const email = document.getElementById("email").value;
-    const paymentMethod = document.getElementById("payment").value;
+        // Get user input
+        const email = document.getElementById("email").value;
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const paymentMethod = document.getElementById("payment").value;
 
-    // Generate order summary with line breaks
-    const whatsappMessage = `*Pesanan akan di proses..*\n\nProduk : ${selectedInjector}\nEmail : ${email}\nPayment : ${paymentMethod}`;
+        // Generate order summary with line breaks
+        const whatsappMessage = `*Pesanan akan di proses..*\n\nProduk : ${selectedInjector}\nEmail : ${email}\nUsername : ${username}\nPassword : ${password}\nPayment : ${paymentMethod}`;
 
-    // Redirect to WhatsApp with the message (let encodeURIComponent handle encoding)
-    const whatsappUrl = `https://wa.me/6281574849252?text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(whatsappUrl, '_blank');
+        // Redirect to WhatsApp with the message (let encodeURIComponent handle encoding)
+        const whatsappUrl = `https://wa.me/6281574849252?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl, '_blank');
 
-    // Close modal after submission
-    closeModal();
-});
-    </script>
+        // Close modal after submission
+        closeModal();
+    });
+</script>
 </body>
-                </html>
+</html>
