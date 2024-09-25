@@ -1,0 +1,77 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('img.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    padding: 20px; /* Memberikan padding di sekitar */
+    display: flex;
+    flex-direction: column; /* Mengatur arah konten ke bawah */
+}
+
+.title {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efek bayangan pada teks */
+    margin-bottom: 20px; /* Memberikan jarak di bawah judul */
+}
+
+.container {
+    flex: 1; /* Mengisi sisa ruang */
+    display: flex;
+    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+    align-items: center; /* Menempatkan konten di tengah secara vertikal */
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.zams-button {
+    font-weight: 600;
+    height: 50px;
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    background: linear-gradient(to bottom, #660cab, #5B0A99); /* Gradasi dari ungu ke hitam */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zams-button:hover {
+    background: linear-gradient(to bottom, #550a9a, #470877);
+}
+
+.zams-btngame {
+    position: absolute;
+    bottom: 70px;
+    height: 50px;
+    display: block;
+    width: 270px;
+    padding: 10px;
+    margin: 10px 0;
+    background: linear-gradient(to bottom, #ff8d00, #ffcc00);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zams-btngame:hover {
+    background: linear-gradient(to bottom, #ff8d09, #ffcc2129);
+}
