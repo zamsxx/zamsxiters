@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IZX HOSTING</title>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'New Amsterdam', sans-serif;
             margin: 0;
             padding: 0;
             background: #121212;
-            color: #fff;
+            color: #e0e0e0;
         }
 
         .container {
@@ -50,8 +51,7 @@
         }
 
         .card {
-           margin-top: 15px;
-            background-color: #1f1f1f;
+            background-color: #1e1e1e;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -75,16 +75,25 @@
             font-size: 2em;
             color: #ffdd57;
         }
-        
+
         .card ul {
             list-style: none;
-            font-size: 1.2em;
             padding: 0;
+            font-size: 1.2em;
+            margin-bottom: 15px;
         }
 
         .card ul li {
             padding: 5px 0;
             color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card ul li i {
+            margin-right: 10px;
+            color: #ff5733;
         }
 
         .price {
@@ -173,158 +182,85 @@
             <h2>Apa itu Panel Bot?</h2>
             <p>
                 Panel bot atau Pterodactyl adalah platform web yang memudahkan pengguna dalam membuat dan mengelola bot WhatsApp. Dengan antarmuka sederhana, pengguna dapat menjalankan script, memantau performa, dan mengelola server tanpa harus memahami teknis mendalam, menjadikannya ideal bagi pemula maupun pengguna berpengalaman.
-
-
             </p>
         </section>
-<section class="pricing-section">
-    <div class="card">
-        <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 5GB/5GB Cpu 150%">
-        <h3>PAKET 1</h3>
-        <ul>
-            <li>RAM: 1GB</li>
-            <li>CPU: 30%</li>
-            <li>DISK: 1GB</li>
-            <li>FREE SC PUSHKONTAK</li>
-        </ul>
-        <div class="price">Rp 1.000</div>
-        <button class="btn" onclick="openModal('Ram 1GB/1GB Cpu 30%')">Beli Sekarang</button>
-    </div>
 
-    <div class="card">
-        <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 5GB/5GB Cpu 150%">
-        <h3>PAKET 2</h3>
-        <ul>
-            <li>RAM: 2GB</li>
-            <li>CPU: 60%</li>
-            <li>DISK: 2GB</li>
-            <li>FREE SC PUSHKONTAK</li>
-        </ul>
-        <div class="price">Rp 2.000</div>
-        <button class="btn" onclick="openModal('Ram 2GB/2GB Cpu 60%')">Beli Sekarang</button>
-    </div>
+        <section class="pricing-section">
+            <div class="card">
+                <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 1GB/1GB Cpu 30%">
+                <h3>PAKET 1</h3>
+                <ul>
+                    <li><i class="fas fa-memory"></i> RAM: 1GB</li>
+                    <li><i class="fas fa-microchip"></i> CPU: 30%</li>
+                    <li><i class="fas fa-hdd"></i> DISK: 1GB</li>
+                    <li><i class="fas fa-gift"></i> FREE SC PUSHKONTAK</li>
+                </ul>
+                <div class="price">Rp 1.000</div>
+                <button class="btn" onclick="openModal('Ram 1GB/1GB Cpu 30%')">Beli Sekarang</button>
+            </div>
 
-    <div class="card">
-        <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 5GB/5GB Cpu 150%">
-        <h3>PAKET 3</h3>
-        <ul>
-            <li>RAM: 3GB</li>
-            <li>CPU: 90%</li>
-            <li>DISK: 3GB</li>
-            <li>FREE SC PUSHKONTAK</li>
-        </ul>
-        <div class="price">Rp 3.000</div>
-        <button class="btn" onclick="openModal('Ram 3GB/3GB Cpu 90%')">Beli Sekarang</button>
-    </div>
+            <div class="card">
+                <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 2GB/2GB Cpu 60%">
+                <h3>PAKET 2</h3>
+                <ul>
+                    <li><i class="fas fa-memory"></i> RAM: 2GB</li>
+                    <li><i class="fas fa-microchip"></i> CPU: 60%</li>
+                    <li><i class="fas fa-hdd"></i> DISK: 2GB</li>
+                    <li><i class="fas fa-gift"></i> FREE SC PUSHKONTAK</li>
+                </ul>
+                <div class="price">Rp 2.000</div>
+                <button class="btn" onclick="openModal('Ram 2GB/2GB Cpu 60%')">Beli Sekarang</button>
+            </div>
 
-    <div class="card">
-        <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 5GB/5GB Cpu 150%">
-        <h3>PAKET 4</h3>
-        <ul>
-            <li>RAM: 4GB</li>
-            <li>CPU: 120%</li>
-            <li>DISK: 4GB</li>
-            <li>FREE SC PUSHKONTAK</li>
-        </ul>
-        <div class="price">Rp 4.000</div>
-        <button class="btn" onclick="openModal('Ram 4GB/4GB Cpu 120%')">Beli Sekarang</button>
-    </div>
+            <div class="card">
+                <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 3GB/3GB Cpu 90%">
+                <h3>PAKET 3</h3>
+                <ul>
+                    <li><i class="fas fa-memory"></i> RAM: 3GB</li>
+                    <li><i class="fas fa-microchip"></i> CPU: 90%</li>
+                    <li><i class="fas fa-hdd"></i> DISK: 3GB</li>
+                    <li><i class="fas fa-gift"></i> FREE SC PUSHKONTAK</li>
+                </ul>
+                <div class="price">Rp 3.000</div>
+                <button class="btn" onclick="openModal('Ram 3GB/3GB Cpu 90%')">Beli Sekarang</button>
+            </div>
 
-    <div class="card">
-        <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 5GB/5GB Cpu 150%">
-        <h3>PAKET 5</h3>
-        <ul>
-            <li>RAM: 5GB</li>
-            <li>CPU: 150%</li>
-            <li>DISK: 5GB</li>
-            <li>FREE SC PUSHKONTAK</li>
-        </ul>
-        <div class="price">Rp 6.000</div>
-        <button class="btn" onclick="openModal('Ram 5GB/5GB Cpu 150%')">Beli Sekarang</button>
-    </div>
-
-    <div class="card">
-        <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram UNLI/UNLI Cpu unli">
-        <h3>PAKET UNLI</h3>
-        <ul>
-            <li>RAM: Unlimited</li>
-            <li>CPU: Unlimited</li>
-            <li>DISK: Unlimited</li>
-            <li>FREE SC PUSHKONTAK</li>
-        </ul>
-        <div class="price">Rp 7.000</div>
-        <button class="btn" onclick="openModal('Ram UNLI/UNLI Cpu unli')">Beli Sekarang</button>
-    </div>
-</section>
+            <div class="card">
+                <img src="https://w7.pngwing.com/pngs/440/752/png-transparent-wordpress-computer-icons-web-hosting-service-ticket-text-logo-area.png" alt="Ram 4GB/4GB Cpu 120%">
+                <h3>PAKET 4</h3>
+                <ul>
+                    <li><i class="fas fa-memory"></i> RAM: 4GB</li>
+                    <li><i class="fas fa-microchip"></i> CPU:120%</li>
+                    <li><i class="fas fa-hdd"></i> DISK: 4GB</li>
+                    <li><i class="fas fa-gift"></i> FREE SC PUSHKONTAK</li>
+                </ul>
+                <div class="price">Rp 4.000</div>
+                <button class="btn" onclick="openModal('Ram 4GB/4GB Cpu 120%')">Beli Sekarang</button>
+            </div>
+        </section>
     </div>
 
     <!-- Modal -->
- <!-- Modal -->
-<div id="purchaseModal" class="modal">
-    <div class="modal-content">
-        <h3>Pembelian <span id="injectorType"></span></h3>
-        <form id="purchaseForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
-            <h3>REQUEST LOGIN</h3>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Masukkan username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
-
-            <label for="payment">Metode Pembayaran:</label>
-            <select id="payment" name="payment" required>
-                <option value="">Pilih metode pembayaran</option>
-                <option value="DANA">DANA</option>
-                <option value="GOPAY">GOPAY</option>
-                <option value="QRIS">QRIS</option>
-            </select>
-
-            <p id="orderSummary"></p>
-
-            <button type="submit" class="btn">Konfirmasi Pembelian</button>
-        </form>
-        <br>
-        <button class="close-btn" onclick="closeModal()">Batal Pesan</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h4>Order Paket</h4>
+            <p id="package-info"></p>
+            <input type="text" placeholder="Nama Lengkap">
+            <input type="text" placeholder="Email">
+            <input type="number" placeholder="No. HP">
+            <button class="close-btn" onclick="closeModal()">Submit</button>
+        </div>
     </div>
-</div>
 
-<script>
-    let selectedInjector = "";
+    <script>
+        function openModal(packageName) {
+            document.getElementById('package-info').textContent = "Anda memilih: " + packageName;
+            document.getElementById('modal').style.display = 'flex';
+        }
 
-    // Function to open modal and display injector details
-    function openModal(injector) {
-        selectedInjector = injector;
-        document.getElementById("injectorType").innerText = injector;
-        document.getElementById("purchaseModal").style.display = "flex";
-    }
-
-    // Function to close modal
-    function closeModal() {
-        document.getElementById("purchaseModal").style.display = "none";
-    }
-
-    // Handle form submission
-    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        // Get user input
-        const email = document.getElementById("email").value;
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        const paymentMethod = document.getElementById("payment").value;
-
-        // Generate order summary with line breaks
-        const whatsappMessage = `*Pesanan akan di proses..*\n\nProduk : ${selectedInjector}\nEmail : ${email}\nUsername : ${username}\nPassword : ${password}\nPayment : ${paymentMethod}`;
-
-        // Redirect to WhatsApp with the message (let encodeURIComponent handle encoding)
-        const whatsappUrl = `https://wa.me/62895340514948?text=${encodeURIComponent(whatsappMessage)}`;
-        window.open(whatsappUrl, '_blank');
-
-        // Close modal after submission
-        closeModal();
-    });
-</script>
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
 </body>
-          </html>
+</html>
