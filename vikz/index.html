@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button to Google Drive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #4285F4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #357AE8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn" onclick="goToDrive()">Go to Google Drive</button>
+    </div>
+
+    <script>
+        function goToDrive() {
+            window.location.href = 'https://drive.google.com/file/d/18hxGKbCrCPJPH_vULYrcjjwaE0b3GnJE/view?usp=drive_link';
+        }
+    </script>
+</body>
+</html>
